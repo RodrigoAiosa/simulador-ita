@@ -4,6 +4,7 @@ import json
 import random
 from datetime import datetime
 from questoes import QUESTOES_POR_ANO, MATERIAS
+from esconder_selo import esconder_selo_streamlit
 
 # ─── PAGE CONFIG ────────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -12,6 +13,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+esconder_selo_streamlit()  # oculta os controles do Streamlit Cloud
 
 # ─── CSS ────────────────────────────────────────────────────────────────────────
 st.markdown("""
